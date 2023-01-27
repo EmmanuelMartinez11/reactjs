@@ -6,11 +6,9 @@ import CartWidget from "../CartWidget/CartWidget";
 const Navbar = () => {
     return (
         <nav className="nav">
-            <h1>Titulo Tienda</h1>
-            <ul className="lista">
-                <li>Categorias <Categorias/></li>
-            </ul>
-            <input type="text" />
+            <h1>Tech-mania</h1>
+            <Categorias/>
+            <input type="text" placeholder="Buscar producto"/>
             <CartWidget cantidadCarrito={0}/>
         </nav>
     );

@@ -1,11 +1,15 @@
 const Categorias = () => {
     return (
-        <ul className="subMenu">
-            <li><button>Celulares</button></li>
-            <li><button>Computadoras</button></li>
-            <li><button>Componentes</button></li>
-            <li><button>Perifericos</button></li>
-        </ul>  
+        <ul>
+            <li>Categorias
+                <ul>
+                <li><button>Celulares</button></li>
+                <li><button>Periféricos</button></li>
+                <li><button>Componentes</button></li>
+                <li><button>Computadoras armadas</button></li>
+                </ul>
+            </li>
+        </ul>
     );
 }
 

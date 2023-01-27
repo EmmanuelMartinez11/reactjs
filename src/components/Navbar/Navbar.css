@@ -5,60 +5,82 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+
+    text-decoration: none;
 }
 
-.nav {
+nav {
     height: 10vh;
     background-color: #1A6573;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding: 0px 5vw;
 }
 
-.nav > ul > li {
+/* CATEGORIAS */
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
     position: relative;
-    display: inline-block;
-}
-
-.lista > li {
-    background-color: transparent;
-    border-style: none;
-    display: block;
-    cursor: pointer;
-}
-
-.subMenu {
-    position: absolute;
-
-    display: none;
-    cursor: pointer;
-    top: 20px;
-}
-.nav li:hover .subMenu{
-    display: block;
-}
-.subMenu button {
-    background-color: transparent;
-    border-style: none;
     color: white;
+    padding: 14px;
+    transition: all .3s ease;
+    
+}
+
+nav > ul > li:hover {
+    transform: scale((1.1));
+    background-color: #0074C7;
+    box-shadow: 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+/* SUBMENU */
+nav ul li ul {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #0074C7;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 5px 5px rgb(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: all .3s ease;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 45px;
+}
+
+nav ul li ul button {
     display: block;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.lista:hover, .nav li:hover, .nav li button:hover {
-    background-color: rgb(219, 226, 231);
-    transition: all .3s;
-    color: #1A6573;
-}
-
-.botonCarrito {
-    background-color: transparent;
+    color: white;
     border-style: none;
-    font-size: 2rem;
+    background-color: transparent;
+    padding: 6px;
+    padding-left: 10px;
 }
-.botonCarrito span {
+
+nav ul li ul li:hover {
+    background-color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.5);
+}
+
+/* CARRITO */
+.botonCarrito {
+    border-style: none;
+    background-color: transparent;
     font-size: 1.5rem;
+}
+.bi-cart {
+    font-size: 2rem;
 }
