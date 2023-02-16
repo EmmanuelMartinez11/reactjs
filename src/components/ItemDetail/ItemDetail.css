@@ -1,0 +1,34 @@
+.productoDetallado {
+    border: 2px black solid;
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    background-color: #3BE2FF;
+    height: 60vh;
+}
+
+.productoDetallado_Titulo {
+    font-size: 3rem;
+}
+
+.productoDetallado_Detalles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 40px;
+    justify-content: center;
+}
+
+.productoDetallado_Imagen{
+    height: 100%;
+}
+
+.sumar, .restar {
+    margin: 0 10px;
+    border: none;
+	font-size: 2rem;
+	background-color: transparent	;
+	color: white;
+	cursor: pointer;
+}
+
