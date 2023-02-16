@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "idCategoria": 1,
+        "idCategoria": "Notebooks",
         "nombre": "Notebook",
         "marca": "Lenovo",
         "modelo": "Y510P",
@@ -11,7 +11,7 @@
     },
     {
         "id": 2,
-        "idCategoria": 2,
+        "idCategoria": "Celulares",
         "nombre": "Celular",
         "marca": "Xiomi",
         "modelo": "Mi-9",
@@ -21,7 +21,7 @@
     },
     {
         "id": 3,
-        "idCategoria": 3,
+        "idCategoria": "Televisión",
         "nombre": "Smart Tv",
         "marca": "Novatech",
         "modelo": "50D1U",
@@ -31,7 +31,7 @@
     },
     {
         "id": 4,
-        "idCategoria": 4,
+        "idCategoria": "Periféricos y otros",
         "nombre": "Camara ",
         "marca": "iQual",
         "modelo": "C40",
@@ -41,7 +41,7 @@
     },
     {
         "id": 5,
-        "idCategoria": 4,
+        "idCategoria": "Periféricos y otros",
         "nombre": "Mouse",
         "marca": "Logitech",
         "modelo": "G502",
@@ -51,7 +51,7 @@
     },
     {
         "id": 6,
-        "idCategoria": 4,
+        "idCategoria": "Periféricos y otros",
         "nombre": "Auriculares",
         "marca": "Motorola",
         "modelo": "Pulse",
@@ -61,7 +61,7 @@
     },
     {
         "id": 7,
-        "idCategoria": 2,
+        "idCategoria": "Celulares",
         "nombre": "Celular",
         "marca": "Apple",
         "modelo": "Iphone X Silver",
@@ -71,7 +71,7 @@
     },
     {
         "id": 8,
-        "idCategoria": 3,
+        "idCategoria": "Televisión",
         "nombre": "Apple TV",
         "marca": "Apple ",
         "modelo": "32 Gb",
@@ -81,7 +81,7 @@
     },
     {
         "id": 9,
-        "idCategoria": 4,
+        "idCategoria": "Periféricos y otros",
         "nombre": "Parlante",
         "marca": "Kalley",
         "modelo": "SPK200",
@@ -91,7 +91,7 @@
     },
     {
         "id": 10,
-        "idCategoria": 1,
+        "idCategoria": "Notebooks",
         "nombre": "Mac Air",
         "marca": "Apple",
         "modelo": "M1 2020",
@@ -101,7 +101,7 @@
     },
     {
         "id": 11,
-        "idCategoria": 2,
+        "idCategoria": "Celulares",
         "nombre": "Celular",
         "marca": "Samsung",
         "modelo": "S20",
@@ -111,7 +111,7 @@
     },
     {
         "id": 12,
-        "idCategoria": 1,
+        "idCategoria": "Notebooks",
         "nombre": "Notebook",
         "marca": "HP",
         "modelo": "Pavilion 15",

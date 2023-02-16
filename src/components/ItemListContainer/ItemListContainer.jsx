@@ -12,7 +12,7 @@ const ItemListContainer = () => {
     useEffect(() => {
         if (idCategoria) {
             consultarBaseDeDatos("../json/productos.json").then(productosFiltrados => {
-                const arrayObjetos = productosFiltrados.filter(prods => prods.idCategoria === Number(idCategoria))
+                const arrayObjetos = productosFiltrados.filter(prods => prods.idCategoria === idCategoria)
                 const items = ItemList({arrayObjetos})
                 setProductos(items)
             })
@@ -22,10 +22,7 @@ const ItemListContainer = () => {
                 setProductos(items)
             })
         }
-
-
-        
-    }, [])
+    }, [idCategoria])
 
     return (
         <div className="productoContainer">

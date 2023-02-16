@@ -36,9 +36,9 @@
 	font-size: 14px;
     padding: 5px;
 }
-.botonComprar {
-    display: inline-block;
-	text-decoration: none;
+.comprar {
+	display: flex;
+	justify-content: center;
 	color: #2fb4cc;
 	border: 1px solid #2fb4cc;
 	border-radius: 4px;
@@ -46,10 +46,20 @@
     padding: 15px;
     cursor: pointer;
 }
-.botonComprar:hover, .botonFooter:hover {
+.botonComprar {
+	text-decoration: none;
+	background-color: transparent;
+	border-style: none;
+	cursor: pointer;
+	color: #2fb4cc;
+}
+
+.comprar:hover, .botonFooter:hover, .comprar:hover > .botonComprar{
     background: #2fb4cc;
 	color: #fff;
+	transition: all .3s ease;
 }
+
 
 .botonCarrito:hover {
 	color: #2fb4cc;
