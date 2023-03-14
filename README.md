@@ -17,9 +17,12 @@ _Luego vaya al buscador del navegador y ponga:_
 
 - localhost:3000
 
-## Creado con
+## Creado con:
 
 * [React] (https://reactjs.org/) - Frontend Framework
 * [Toastify] (https://www.npmjs.com/package/react-toastify) - Notificaciones
 * [SweetAlert] (https://sweetalert2.github.io/#download) - Alertas
 * [Firebase] (https://firebase.google.com/?hl=es-419) - Base de datos
+
+### Video de navegabilidad:
+https://www.youtube.com/watch?v=yJFz-UaHEpw
