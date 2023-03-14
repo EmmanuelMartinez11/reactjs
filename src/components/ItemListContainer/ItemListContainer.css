@@ -1,9 +1,28 @@
+/* TODOS LOS PRODUCTOS */
 .productoContainer {
-	padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-radius: 50px;
-    background-color: #3BE2FF;
-    margin: 20px;
+}
+
+/* CATEGORIAS */
+.categoriaContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "titulo" "productos";
+}
+.categoriaTitulo { 
+    grid-area: titulo;
+    font-size: 2rem;
+    margin-top: 20px;
+    justify-self: center;
+    border-bottom: 5px solid #1A6573;
+    color: white;
+}
+.productoCategoriaContainer {
+    grid-area: productos;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }

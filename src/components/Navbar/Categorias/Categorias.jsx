@@ -1,21 +1,30 @@
+//React memo
+import React from "react";
+//React-router-dom
 import { Link } from "react-router-dom";
 
-const Categorias = () => {
+//Componente que muestra las categorias y que, al hacerles click, me redirecciona
+const Categorias = React.memo(() => {
     return (
         <ul>
             <li>
                 <Link to={"/"}><button className="botonInicio">Inicio</button></Link>
             </li>
-            <li>Categorias
+            <li className="botonInicio">Categorias
                 <ul>
-                    <li><Link to={`/categoria/Notebooks`}><button>Noteboks</button></Link></li>
-                    <li><Link to={"/categoria/Celulares"}><button>Celulares</button></Link></li>
-                    <li><Link to={"/categoria/Televisión"}><button>Televisión</button></Link></li>
-                    <li><Link to={"/categoria/Periféricos y otros"}><button>Periféricos y otros </button></Link></li>
+                    <li><Link to={"/category/televisores"}><button className="botonSubmenu">Televisores</button></Link></li>
+                    <li><Link to={"/category/celulares"}><button className="botonSubmenu">Celulares</button></Link></li>
+                    <li><Link to={"/category/relojes inteligentes"}><button className="botonSubmenu">Relojes inteligentes</button></Link></li>
+                    <li><Link to={"/category/tablets"}><button className="botonSubmenu">Tablets</button></Link></li>
                 </ul>
             </li>
         </ul>
     );
-}
+})
 
 export default Categorias;
+
+
+
+
+

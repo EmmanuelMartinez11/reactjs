@@ -1,0 +1,19 @@
+.carrito {
+    color: black;
+    position: relative;
+    transition: all ease 0.3s;
+}
+.carrito:hover {
+    text-decoration: none;
+    transform: translateZ(3%);
+    color: white;
+}
+.bi-cart {
+    font-size: 3rem;
+}
+.cantidadProducto {
+    color: white;
+    position: absolute;
+    right: 18px;
+    top: 16px;
+}

@@ -1,69 +1,78 @@
+/* PRODUCTO CONTAINER */
 .productoCard {
     width: 250px;
 	margin: 30px;
 	border-radius: 6px;
 	overflow: hidden;
-	background:#fff;
+	background: rgb(37, 37, 37);
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
 	display: flex;
 	flex-direction: column;
 }
-.productoCard:hover, .buscadores > li:hover, .bi-cart:hover, .botonCarrito:hover, .botonFooter:hover {
+.productoCard:hover{
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-3%);
 }
-
+.productoCard .datosProducto{
+	text-align: center;
+}
+/* IMAGEN DEL PRODUCTO */
 .productoCard img{
 	width: inherit;
 	height: inherit;
 }
-.productoCard .datosProducto{
+/* TEXTO DEL PRODUCTO */
+.datosProducto {
 	padding: 10px;
-	text-align: center;
 }
 .productoCard .datosProducto h3{
-	width: 100%;
-	max-width: 1080px;
+	color: white;
+	width: inherit;
 	text-align: center;
-	color: black;
-    padding: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	max-height: 23px;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 .productoCard .datosProducto p{
 	line-height: 1.8;
-	color: black;
-	font-size: 14px;
+	color: white;
+	font-size: 1rem;
     padding: 5px;
+	max-height: 57px;
+	text-overflow: ellipsis;
 }
+.linea {
+	border-bottom: grey 2px solid;
+}
+
+/* BOTON DE VER PRODUCTO */
 .comprar {
-	display: flex;
-	justify-content: center;
+	text-align: center;
 	color: #2fb4cc;
-	border: 1px solid #2fb4cc;
-	border-radius: 4px;
 	transition: all 400ms ease;
     padding: 15px;
     cursor: pointer;
+	max-height: 24px;
 }
+
 .botonComprar {
 	text-decoration: none;
 	background-color: transparent;
 	border-style: none;
 	cursor: pointer;
 	color: #2fb4cc;
+	font-size: 1.2rem;
 }
 
-.comprar:hover, .botonFooter:hover, .comprar:hover > .botonComprar{
+.comprar:hover{
     background: #2fb4cc;
 	color: #fff;
 	transition: all .3s ease;
 }
-
-
-.botonCarrito:hover {
-	color: #2fb4cc;
-}
-.linea {
-	border-bottom: grey 2px solid;
+.comprar:hover > .botonComprar {
+	color: #fff;
 }

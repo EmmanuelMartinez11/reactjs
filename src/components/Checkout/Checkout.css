@@ -1,0 +1,67 @@
+.contenedor {
+    background-color: rgb(13, 13, 13); 
+    color: white;
+}
+
+/* FORMULARIO */
+.formularioTitulo{
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 2rem;
+}
+.formularioContainer {
+    margin: 5%;
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, 3);
+    background-color: rgb(37, 37, 36);
+    display: flex;
+    gap: 100px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.6rem;
+    padding: 2.5%;
+}
+
+.formulario button, .formulario input {
+    width: 100%;
+    padding: .3rem;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    border-bottom: 2px solid #1A6573;
+}
+
+.formulario button {
+    transition: all .3s ease;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #0074C7;
+}
+.formulario button:hover {
+    transform: scale((1.1));
+    box-shadow: 5px 5px rgb(0, 0, 0, 0.5);
+    background-color: greenyellow;
+    color: black;
+}
+
+/* DATOS DE CONTACTO */
+.info {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #1A6573;
+    display: inline;
+}
+.contacto {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    line-height: 1.6rem;
+    padding: 2.5%;
+}

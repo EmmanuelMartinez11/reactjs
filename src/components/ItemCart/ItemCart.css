@@ -1,0 +1,53 @@
+.carritoProducto {
+    display: grid;
+    grid-template-areas: "imagen datos" 
+                         "imagen botones";
+    border: 2px white solid;
+    color: white;
+    gap: 2rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+    padding: 2%;
+    margin: 4%;
+    background-color: rgb(37, 37, 36);
+}
+.carritoImagen {
+    width: 175px;
+    grid-area: imagen;
+}
+/* DATOS */
+.carritoDatos {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    border: 2px solid #1A6573;
+    grid-area: datos;
+    justify-content: center;
+    background-color: rgb(63, 61, 61);
+    padding: 20px;
+}
+
+/* BOTONES */
+.carritoBotones {
+    grid-area: botones;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.eliminarProducto {
+    padding: 5px;
+    transition: all .3s ease;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #0074C7;
+}
+.eliminarProducto:hover {
+    background-color: red;
+}
