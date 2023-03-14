@@ -1,34 +1,65 @@
-.productoDetallado {
-    border: 2px black solid;
-    margin: 5%;
-    padding: 3%;
+.prodDetContainer {
+    color: white;
     display: flex;
-    background-color: #3BE2FF;
-    height: 60vh;
+    gap: 2rem;
+    margin: 30px;
+    background-color: rgb(37, 37, 36);
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255, 3);
+    border-radius: 1rem;
 }
 
-.productoDetallado_Titulo {
-    font-size: 3rem;
-}
-
-.productoDetallado_Detalles {
+/* IMAGEN */
+.prodDetImagenContainer {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 40px;
+    align-items: center;
     justify-content: center;
+    width: 35%;
+    padding: 15px;
+}
+.prodDetImagen {
+    max-width: 98%;
 }
 
-.productoDetallado_Imagen{
-    height: 100%;
+/* DETALLES */
+.prodDetDetallesContainer {
+    padding-top: 30px;
+}
+.prodDetTitulo {
+    font-size: 2rem;
+}
+.prodDetTexto {
+    padding-top: 10px;
+    font-size: 1.1rem;
+}
+.moverComponente {
+    padding-bottom: 10px;
 }
 
-.sumar, .restar {
-    margin: 0 10px;
+/* BOTONES */
+.prodDetBoton {
+    margin-right: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+    background-color: transparent;
     border: none;
-	font-size: 2rem;
-	background-color: transparent	;
-	color: white;
-	cursor: pointer;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #0074C7;
 }
 
+.prodDetBoton:hover {
+    transform: scale((1.1));
+    box-shadow: 5px 5px rgb(0, 0, 0, 0.5);
+}
+
+.volver:hover {
+    color: #0074C7;
+    background-color: white;
+}
+
+.seguir:hover {
+    color: white;
+    background-color: rgb(52, 214, 79);
+}

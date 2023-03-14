@@ -1,11 +1,22 @@
+//Componentes
 import Item from "../Item/Item";
+import ItemCart from "../ItemCart/ItemCart";
 
-const ItemList = ({arrayObjetos}) => {
+//Componente que toma un array de objetos y me los modifica para que, cada uno, sea un JSX 
+const ItemList = ({ArrayDeObjetos, plantilla}) => {
     return (
         <>
-            {arrayObjetos.map(producto => <Item item={producto} key={producto.id}/>)}
+            {
+                plantilla === "Item" 
+                ? 
+                ArrayDeObjetos.map(objeto => <Item item={objeto} key={objeto.id}/>)
+                :
+                ArrayDeObjetos.map(objeto => <ItemCart item={objeto} key={objeto.id}/>)
+            }
+            
         </>
     );
 }
 
 export default ItemList;
+

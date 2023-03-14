@@ -1,0 +1,46 @@
+.carritoResumen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 3%;
+    background-color: #192629;
+}
+.carritoTitulo {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.carritoRedireccion {
+    display: flex;
+    gap: 5rem;
+}
+.carritoBoton {
+    margin-right: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    transition: all .3s ease;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: #0074C7;
+}
+.finalizar:hover {
+    background-color: rgb(52, 214, 79);
+    color: white;
+}
+
+
+/* CARRITO VACIO */
+.noProductos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+    color: white;
+    margin: 5%;
+}
