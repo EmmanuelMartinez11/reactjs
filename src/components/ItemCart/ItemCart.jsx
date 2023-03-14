@@ -53,7 +53,7 @@ const ItemCart = ({item}) => {
             </div>
 
             <div className="carritoBotones">
-                <ItemCount valorMinimo={1} valorMaximo={item.stock} onAdd={onAdd} mensajeToasty={"Hola"} textBoton={"Actualizar producto"} icono={<i className="bi bi-arrow-clockwise"></i>}></ItemCount>
+                <ItemCount valorMinimo={1} valorMaximo={item.stock} onAdd={onAdd} mensajeToasty={"Hola"} textBoton={"Actualizar la cantidad a comprar"} icono={<i className="bi bi-arrow-clockwise"></i>}></ItemCount>
                 <button className="eliminarProducto" onClick={() => eliminar()}><i className="bi bi-trash"></i> Eliminar del carrito</button>
             </div>  
             
